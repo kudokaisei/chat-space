@@ -3,11 +3,10 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false,|
-|e-mail|string|null: false,|
-|password|string|null: false,|
+|e-mail|string|null: false, unique: true|
+|password|string|null: false, unique: true|
 
 ### Association
-- has_many :groups
 - has_many :groups_users
 - has_many :messages
 - has_many  :groups,  through:  :groups_tags
@@ -16,7 +15,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|groups-name|text|null: false, foreign_key: true|
+|group-name|text|null: false,|
 
 ### Association
 - has_many :messages
