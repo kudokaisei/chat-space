@@ -3,7 +3,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false,|
-|e-mail|string|null: false, unique: true|
+|mail|string|null: false, unique: true|
 |password|string|null: false, unique: true|
 
 ### Association
@@ -15,7 +15,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group-name|text|null: false,|
+|name|text|null: false,|
 
 ### Association
 - has_many :messages
