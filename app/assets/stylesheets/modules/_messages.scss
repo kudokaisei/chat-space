@@ -21,19 +21,27 @@
     height: calc(100vh - 100px);
   }
   &__box {
-    background-color: #d8d8d8;
     height: 20px;
     width: 260px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  &__name {
+    color: #ffffff;
+  }
   &__icons {
     width: 60px;
     display: flex;
+    justify-content: flex-end;
+    list-style: none;
   }
-  &--icon {
+  &__icon {
     text-decoration: none;
+    color: #ffffff;
+  }
+  &__edit {
+    margin-right: 5px;
   }
 }
 
