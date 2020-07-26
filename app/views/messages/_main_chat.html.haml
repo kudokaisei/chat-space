@@ -16,11 +16,11 @@
       %p.Chat-main__date 2020/07/26(sunday) 08:46:00
     %p.Chat-main__text 今日から夜は雨
 
-  .Chat-main__form
+  .form
     %form.new_message
       .input-box
-        %input{:type => "text", class: "input-box__text", :placeholder => "tyape a message"}
+        %input{:type => "text", class: "input-box__text", placeholder: "tyape a message"}
         %label{class: "input-box__image"}
-          = icon{'fas', 'image'}
-          %input{:type 'file', class: "input-box__image__file",}
+          = icon('fas', 'image')
+          %input{type: 'file', class: "input-box__image__file",}
       %input{type: "submit", value: "SEND", class: "submit"}
