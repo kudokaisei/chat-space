@@ -72,10 +72,8 @@
 
     .group-info {
       height: 100px;
-      border-bottom: 1px solid #eeeeee;
       display: flex;
       justify-content: space-between;
-      align-items: center;
       padding: 0 40px;
 
       &__header {
@@ -83,7 +81,7 @@
         &__group-name {
           font-size: 20px;
           color: #333333;
-          padding: 35px 0 15px 0;
+          margin: 35px 0 15px 0;
         }
         &__member {
           color: #999999;
@@ -93,12 +91,14 @@
 
       &__edit {
         color: #38aef0;
+        border: 1px solid #38aef0;
         font-size: 16px;
         height: 40px;
         width: 72px;
         text-decoration: none;
-        margin: 28px 0 0 0;
+        margin-top: 28px;
         padding: 0 20px;
+        line-height: 40px;
       }
     }
 
@@ -170,6 +170,7 @@
           color: #fff;
           font-size: 15px;
           cursor: pointer;
+          border: none;
         }
       }
     }
