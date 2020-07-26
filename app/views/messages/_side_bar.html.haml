@@ -1,16 +1,16 @@
 .Side-bar
-  .Side-bar__header
-    .Side-bar__box
-      %p.Side-bar__name masa
-      %ul.Side-bar__icons
+  .header
+    .left-heder
+      %p.left-heder__name masa
+      %ul.left-heder__icons
         %li 
-        = link_to "#", class: "Side-bar__icon "do
-          = icon('far', 'edit', class: "Side-bar__edit")
+        = link_to "#", class: "left-heder__icons__icon "do
+          = icon('far', 'edit', class: "left-heder__icons__edit")
         %li
-        = link_to "#", class: "Side-bar__icon " do
-          = icon('fas', 'cog', class: "Side-bar__cog")
+        = link_to "#", class: "left-heder__icons__icon " do
+          = icon('fas', 'cog', class: "left-heder__icons__cog")
 
-  .Side-bar__group-list
-    %h2.Side-bar__group techcamp
-    %p.Side-bar__message まだメッセージがありません
+  .group-list
+    %h2.group-list__group techcamp
+    %p.group-list__message まだメッセージがありません
 
