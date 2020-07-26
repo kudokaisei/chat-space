@@ -1,9 +1,26 @@
 .Chat-main
   .Chat-main__group-info
     .Chat-main__header 
-      %p.Chat-main__text test
+      %h3.Chat-main__group-name test
       %p.Chat-main__member Member : masa
-    = link_to '#', class: "Chat-main__edit" 
-    edit
+    = link_to '#', class: "Chat-main__edit" do
+      Edit
+
   .Chat-main__message-list
-  .Chat-main__message-form
+    .Chat-main__message
+      %h3.Chat-main__name masa
+      %p.Chat-main__date 2020/07/26(sunday) 08:46:00
+    %p.Chat-main__text おはよう！
+    .Chat-main__next-message
+      %h3.Chat-main__name masa
+      %p.Chat-main__date 2020/07/26(sunday) 08:46:00
+    %p.Chat-main__text 今日から夜は雨
+
+  .Chat-main__form
+    %form.new_message
+      .input-box
+        %input{:type => "text", class: "input-box__text", :placeholder => "tyape a message"}
+        %label{class: "input-box__image"}
+          = icon{'fas', 'image'}
+          %input{:type 'file', class: "input-box__image__file",}
+      %input{type: "submit", value: "SEND", class: "submit"}
