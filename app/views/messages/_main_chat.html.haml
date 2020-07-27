@@ -1,0 +1,27 @@
+.Chat-main
+  
+  .group-info
+    .group-info__header 
+      %h3.group-info__header__group-name test
+      %p.group-info__header__member Member : masa
+    = link_to '#', class: "group-info__edit" do
+      Edit
+
+  .message-list
+    .message-list__message
+      %h3.message-list__message__name masa
+      %p.message-list__message__date 2020/07/26(sunday) 08:46:00
+    %p.message-list__text おはよう！
+    .message-list__message
+      %h3.message-list__message__name masa
+      %p.message-list__message__date 2020/07/26(sunday) 08:46:00
+    %p.message-list__text 今日から夜は雨
+
+  .form
+    %form.new_message
+      .input-box
+        %input{:type => "text", class: "input-box__text", placeholder: "tyape a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: 'file', class: "input-box__image__file",}
+      %input{type: "submit", value: "Send", class: "submit"}
