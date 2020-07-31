@@ -113,15 +113,18 @@
       &__message {
         display: flex;
 
-        &__name {
+        .name {
           color: #333333;
           font-size: 16px;
         }
-        &__date {
+        .date {
           color: #999999;
           font-size: 12px;
         }
       }
+    }
+
+    .message {
 
       &__text {
         color: #434a54;
@@ -131,12 +134,12 @@
       }
     }
     
-    .form {
+    .Form {
       height: 90px;
       background-color: #d2d2d2;
       padding: 20px 40px;
 
-      form {
+      .form {
         display: flex;
 
         .input-box {
