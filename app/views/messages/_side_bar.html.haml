@@ -1,4 +1,4 @@
-.Side-bar
+.side-bar
   .user-name
     .top-items
       %p.top-items__name 
@@ -8,7 +8,11 @@
         = link_to new_group_path(current_user), class: "top-items__icons__icon" do
           = icon('far', 'edit', class: "top-items__icons__icon__edit")
         %li
+<<<<<<< Updated upstream
         = link_to edit_user_path(current_user), class: "top-items__icons__icon" do
+=======
+        = link_to edit_group_path(@group), class: "top-items__icons__icon" do
+>>>>>>> Stashed changes
           = icon('fas', 'cog', class: "top-items__icons__icon__cog")
 
   .group-list
