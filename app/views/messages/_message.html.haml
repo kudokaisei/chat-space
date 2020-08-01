@@ -1,12 +1,13 @@
-.message-list__message
-  .message-list__message__name
-    = message.user.name
-  .message-list__message__date
-    = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-.message
-  - if message.content.present?
-    %p.message__text
-      = message.content
-  = image_tag message.image.url, class: 'message__image' if message.image.present?
+.message-field
+  .message-field__view
+    .message-field__view__name
+      = message.user.name
+    .message-field__view__date
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  .message-field__message
+    - if message.content.present?
+      %p.message-field__message__text
+        = message.content
+    = image_tag message.image.url, class: 'message-field__message__image' if message.image.present?
 
 
