@@ -54,9 +54,14 @@ $(function(){
     })
     .done(function(message){
       let html = buildHTML(message)
-      $(".message-zone").append(html);
+      $('.message-zone').append(html);
       $('form')[0].reset();
+      $('.message-zone').animate({ scrollTop: $('.message-zone')[0].scrollHeight}, 50, 'swing');
+      $('.submit').prop('disabled', false);
     })
+    .fail(function() {
+      alert("メッセージ送信に失敗しました");
+    });
   });
 });
 
